@@ -377,3 +377,110 @@
   }
 }
 /* #Team Member card end  */
+/* #Blog card start  */
+.a2n-btn {
+  position: relative;
+  padding: 18px 22px;
+  transition: all 0.2s ease;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(46, 202, 127, 0.2);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+  }
+  span {
+    position: relative;
+    font-size: 15px;
+    color: #1a2d62;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 !important;
+  }
+  svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    span {
+      color: #fff;
+    }
+    svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: #fff;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+    }
+    &::before {
+      width: 100%;
+      background: #2eca7f;
+    }
+  }
+}
+.a2n_blog-card {
+  width: 100%;
+  max-width: 418px;
+  background: #fff;
+  border-radius: 0px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
+  box-shadow: 10px 15px 18px rgba(23, 23, 36, 0.03);
+  img {
+    width: 100%;
+    border-radius: 8px 8px 0 0 !important;
+  }
+  .content_box {
+    padding: 35px;
+    span {
+      font-family: "Mulish", sans-serif;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+      display: inline-block;
+      a {
+        color: #2eca7f;
+        font-weight: 700;
+      }
+    }
+    h2 {
+      a {
+        font-family: "Mulish", sans-serif;
+        line-height: 32px;
+        font-size: 20px;
+        color: #1a2d62;
+        font-weight: 800;
+        margin-bottom: 40px;
+        display: block;
+        transition: all 0.2s;
+        overflow: hidden;
+        height: 64px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        &:hover {
+          color: #2eca7f;
+        }
+      }
+    }
+  }
+}
+
+/* #Blog card end  */
