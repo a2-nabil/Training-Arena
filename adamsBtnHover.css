@@ -1,0 +1,67 @@
+.srs_first_inner_box button,
+button.foy-enroll-btn,
+a.vbplogin.foy_reg.ar_reg,
+.a2n_h_btn,
+.a2n_btn a {
+  background: #00ff84;
+  color: #002333;
+  display: inline-block !important;
+  transition: color 0.4s linear !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+.a2n_h_btn::before,
+.a2n_btn a::before,
+a.vbplogin.foy_reg.ar_reg::before,
+button.foy-enroll-btn:before,
+.srs_first_inner_box button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #002333;
+  border-radius: 3px !important;
+  z-index: 1;
+  transition: transform 0.5s;
+  transition-timing-function: ease;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+  transform: scaleX(0);
+}
+.a2n_h_btn:hover,
+.a2n_btn a:hover,
+a.vbplogin.foy_reg.ar_reg:hover,
+button.foy-enroll-btn:hover,
+.srs_first_inner_box button:hover a {
+  color: #fff !important;
+}
+.a2n_h_btn:hover::before,
+.a2n_btn a:hover::before,
+a.vbplogin.foy_reg.ar_reg:hover::before,
+button.foy-enroll-btn:hover::before,
+.srs_first_inner_box button:hover::before {
+  transform: scaleX(1) !important;
+  z-index: -1;
+}
+.a2n_h_btn1,
+.a2n_btn_1 a::before {
+  background: #fff !important;
+}
+.a2n_btn_2 a::before {
+  background: #00ff84 !important;
+}
+.a2n_h_btn1,
+.a2n_btn_1 a:hover,
+.a2n_btn_2 a:hover {
+  color: #002333 !important;
+}
+input.course_button.full.button:hover {
+  color: #fff !important;
+  background: #002333 !important;
+}
+input.button.primary.small:hover {
+  background: #fff !important;
+  color: #002333 !important;
+}
